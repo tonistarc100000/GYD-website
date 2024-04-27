@@ -1,0 +1,166 @@
+/* for pc versions  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+/* header started from here  */
+.name-loging {
+  width: 100%;
+  height: 50px;
+  padding: 0px 1vw;
+  border-bottom: 1px solid rgb(53, 53, 53);
+  background-color: gold;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-font {
+  font-size: 22px;
+  color: blue;
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loging {
+  width: 200px;
+  height: 40px;
+  background-color: gold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.loging-deco {
+  width: 80px;
+  height: 35px;
+  color: yellow;
+  background-color: blue;
+  border-radius: 5px;
+  text-align: center;
+  margin: auto;
+  transition: all ease-out 0.3s;
+}
+
+.loging-deco:hover,
+.loging-deco-active {
+  color: blue;
+  background-color: white;
+}
+
+/* main start from here  */
+
+.welcome {
+  position: relative;
+  top: -24px;
+  width: 100%;
+  border-radius: 0% 0% 15% 15%;
+  border: 1px solid rgb(102, 102, 102);
+  padding: 20px;
+  margin: auto;
+  text-align: center;
+  margin-top: 20px;
+  text-transform: capitalize;
+  background-color: gold;
+}
+
+h1,
+p {
+  color: blue;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.startbutton {
+  font-size: 25px;
+  border: 2px solid blue;
+  border-radius: 5px;
+  padding: 5px;
+  display: inline-block;
+  margin-top: 40px;
+  background-color: blue;
+  color: yellow;
+  transition: all ease-in-out 0.3s;
+}
+
+.startbutton:hover,
+.startbutton:active {
+  background-color: white;
+  color: blue;
+}
+
+.profiles {
+  width: 100%;
+  height: auto;
+  background-color: bisque;
+  padding: 2vw;
+  border: 1px solid rgb(138, 138, 138);
+  border-radius: 15% 15% 0% 0%;
+  display: flex;
+  justify-content: space-evenly inset;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.card{
+    width: 100%;
+    height: 400px;
+    margin: 5.5vw;
+    border-radius: 15px;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* for mobile versions  */
+@media only screen and (min-width: 0px) and (max-width: 1000px) {
+  .image1 {
+    /* New image styles for the specific range */
+    /* For example, change the image source */
+    content: url("Images/HeaderImage-m.png");
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 900px) {
+  .profiles {
+    flex-direction: column;
+    border-radius: 15% 15% 0% 0%;
+  }
+  .card{
+    width: 80%;
+  }
+}
