@@ -7,17 +7,25 @@
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
+body {
+  background-color: rgb(255, 253, 162);
+}
+
 /* header started from here  */
+
 .name-loging {
   width: 100%;
   height: 50px;
   padding: 0px 1vw;
   border-bottom: 1px solid rgb(53, 53, 53);
-  background-color: gold;
+  background-color: yellow;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
 }
 
 .header-font {
@@ -29,10 +37,16 @@
   align-items: center;
 }
 
+
+.header-image{
+  margin-top: 50px;
+}
+
+
 .loging {
   width: 200px;
   height: 40px;
-  background-color: gold;
+  background-color: yellow;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -68,7 +82,10 @@
   text-align: center;
   margin-top: 20px;
   text-transform: capitalize;
-  background-color: gold;
+  background-color: yellow;
+}
+.welcome:hover {
+  box-shadow: 0px 17px 25px rgb(220, 220, 220);
 }
 
 h1,
@@ -96,11 +113,18 @@ p {
   color: blue;
 }
 
+.slash-text {
+  border-left: 7px solid blue;
+  font-size: 40px;
+  margin: 3vw 0vw 3vw 3vw;
+  padding-left: 20px;
+}
+
 .profiles {
   width: 100%;
   height: auto;
-  background-color: bisque;
-  padding: 2vw;
+  background-color: yellow;
+  padding: 1vw;
   border: 1px solid rgb(138, 138, 138);
   border-radius: 15% 15% 0% 0%;
   display: flex;
@@ -109,18 +133,235 @@ p {
   align-items: center;
 }
 
-
-.card{
-    width: 100%;
-    height: 400px;
-    margin: 5.5vw;
-    border-radius: 15px;
-    background-color: aqua;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.profiles:hover{
+  box-shadow: 0px -17px 25px rgb(220, 220, 220);
 }
+
+
+
+
+.card {
+  width: 100%;
+  height: 530px;
+  margin: 4vw;
+  padding: 20px;
+  border-radius: 15px;
+  border: 2px solid blue;
+  background-color: yellow;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: all ease 1s;
+}
+
+.card:hover {
+  box-shadow: 0 0 20px gray;
+}
+
+.card-images {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  transition: all ease-out 0.3s;
+}
+
+.card-images:hover {
+  width: 225px;
+  height: 225px;
+}
+
+.details {
+  height: 200px;
+  margin-top: 3vw;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.names {
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.thinking {
+  text-transform: capitalize;
+}
+
+.buttons {
+  width: 120px;
+  background-color: blue;
+  font-size: 20px;
+  font-weight: bolder;
+  padding: 10px;
+  color: yellow;
+  border-radius: 5px;
+  margin-top: 20px;
+  border: 2px solid blue;
+  transition: 0.3s ease-in-out all;
+}
+
+
+
+.buttons:hover{
+  color: blue;
+  background-color: white;
+  border: 2px solid blue;
+  cursor: pointer;
+}
+
+
+
+
+.handles {
+  width: 220px;
+  margin: -10px 0px 0px 0px;
+  font-size: 25px;
+  text-align: center;
+  display: none;
+}
+
+
+.fa{
+  margin-right: 25px ;
+  transition: all ease 0.3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.YoutubeVideos{
+  width: 100%;
+  height: auto;
+  background-color: yellow;
+  padding: 3vw;
+  margin-bottom: auto;
+  border: 1px solid rgb(138, 138, 138);
+  border-radius: 15% 15% 15% 15% ;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between inset;
+  justify-content: center;
+  align-items: center;
+}
+
+.YoutubeVideos:hover{
+  box-shadow: 0 0 20px rgb(83, 83, 83);
+  transition: all ease 0.3s;
+}
+
+.row{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  margin: 15px;
+}
+
+.responsive-design:hover{
+  box-shadow: 0 0 20px rgb(83, 83, 83);
+  transition: all ease 0.3s;
+}
+
+.more_vid_button{
+   width: 285px;
+   height: auto;
+   background-color: blue;
+   color: white;
+   border-radius: 5px;
+   padding: 10px;
+   text-align: center;
+   font-size: 35px;
+   margin-top: 20px;
+   display: flex;
+   justify-content: center inset;
+   justify-content: space-between;
+   align-items: center;
+   transition: all ease-in-out 0.3s;
+}
+
+.more_vid_button:hover,.more_vid_button:active{
+  width: 320px;
+  box-shadow: 0 0 20px rgb(145, 145, 145);
+  background-color: white;
+  color: blue;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Youtubeshorts{
+  width: 100%;
+  height: auto;
+  background-color: yellow;
+  padding: 3vw;
+  margin-bottom: auto;
+  border: 1px solid rgb(138, 138, 138);
+  border-radius: 15% 15% 15% 15% ;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between inset;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.Youtubeshorts:hover{
+  box-shadow: 0 0 20px rgb(83, 83, 83);
+  transition: all ease 0.3s;
+}
+
+
+
+.responsive-design-shorts:hover{
+  box-shadow: 0 0 20px rgb(83, 83, 83);
+  transition: all ease 0.3s;
+}
+
+
+
+
+
+
+
 
 
 
@@ -145,7 +386,7 @@ p {
 
 
 /* for mobile versions  */
-@media only screen and (min-width: 0px) and (max-width: 1000px) {
+@media only screen and (min-width: 0px) and (max-width: 1024px) {
   .image1 {
     /* New image styles for the specific range */
     /* For example, change the image source */
@@ -153,14 +394,49 @@ p {
     width: 100%;
     height: auto;
   }
-}
 
-@media only screen and (min-width: 0px) and (max-width: 900px) {
+
+
   .profiles {
     flex-direction: column;
-    border-radius: 15% 15% 0% 0%;
+    border-radius: 20px 20px 0% 0%;
   }
-  .card{
+  .card {
     width: 80%;
   }
+
+
+
+  .YoutubeVideos{
+    border-radius: 20px;
+  }
+  .row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  
+  }
+
+  .responsive-design{
+      width: 85vw;
+      height: 50vw;
+      margin-top: 20px;
+  }
+
+
+  
+  .Youtubeshorts{
+    border-radius: 20px;
+  }
+
+
+
+  .responsive-design-shorts{
+    width: 85vw;
+    height: 150vw;
+    margin-top: 20px;
 }
+}
+
+
