@@ -1,0 +1,100 @@
+/* universal class and attributes here  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+body {
+  background-color: rgb(255, 253, 162);
+}
+
+/* the header start from here  */
+
+.title-name {
+  width: 100%;
+  height: 65px;
+  font-size: 40px;
+  background-color: yellow;
+  text-align: center;
+  color: blue;
+  border: 1px solid black;
+  border-radius: 0px 0px 5px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.all-nav {
+  width: 100%;
+  height: auto;
+  margin-top: 15px;
+  padding: 0vw 2vw;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between inset;
+  align-items: center;
+}
+
+.navbar {
+  width: 100%;
+  height: auto;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+.nav-items {
+  font-size: 25px;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 5px 10px;
+  color: blue;
+  font-weight: bolder;
+  background-color: yellow;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all ease 0.3s;
+}
+
+.nav-items:hover,.nav-items:active{
+    background-color: white;
+    font-size: 27px;
+}
+
+
+#searchbar-align {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#searchbar {
+  width: 25vw;
+  height: 45px;
+  padding: 5px 10px;
+  font-size: 22px;
+  transition: all ease 0.3s;
+}
+
+
+.expanded {
+    width: 55vw !important; /* Important to override inline styles */
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1000px) {
+  .all-nav {
+    flex-direction: column;
+  }
+  .navbar {
+    justify-content: center inset;
+    justify-content: space-evenly;
+  }
+  #searchbar {
+    width: 100vw;
+  }
+}

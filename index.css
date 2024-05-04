@@ -11,6 +11,9 @@ body {
   background-color: rgb(255, 253, 162);
 }
 
+a {
+  text-decoration: none;
+}
 /* header started from here  */
 
 .name-loging {
@@ -37,11 +40,9 @@ body {
   align-items: center;
 }
 
-
-.header-image{
+.header-image {
   margin-top: 50px;
 }
-
 
 .loging {
   width: 200px;
@@ -133,12 +134,9 @@ p {
   align-items: center;
 }
 
-.profiles:hover{
+.profiles:hover {
   box-shadow: 0px -17px 25px rgb(220, 220, 220);
 }
-
-
-
 
 .card {
   width: 100%;
@@ -202,17 +200,12 @@ p {
   transition: 0.3s ease-in-out all;
 }
 
-
-
-.buttons:hover{
+.buttons:hover {
   color: blue;
   background-color: white;
   border: 2px solid blue;
   cursor: pointer;
 }
-
-
-
 
 .handles {
   width: 220px;
@@ -222,48 +215,19 @@ p {
   display: none;
 }
 
-
-.fa{
-  margin-right: 25px ;
+.fa {
+  margin-right: 25px;
   transition: all ease 0.3;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.YoutubeVideos{
+.YoutubeVideos {
   width: 100%;
   height: auto;
   background-color: yellow;
   padding: 3vw;
   margin-bottom: auto;
   border: 1px solid rgb(138, 138, 138);
-  border-radius: 15% 15% 15% 15% ;
+  border-radius: 15% 15% 15% 15%;
   display: flex;
   flex-direction: column;
   justify-content: space-between inset;
@@ -271,12 +235,12 @@ p {
   align-items: center;
 }
 
-.YoutubeVideos:hover{
+.YoutubeVideos:hover {
   box-shadow: 0 0 20px rgb(83, 83, 83);
   transition: all ease 0.3s;
 }
 
-.row{
+.row {
   width: 100%;
   height: auto;
   display: flex;
@@ -284,58 +248,45 @@ p {
   margin: 15px;
 }
 
-.responsive-design:hover{
+.responsive-design:hover {
   box-shadow: 0 0 20px rgb(83, 83, 83);
   transition: all ease 0.3s;
 }
 
-.more_vid_button{
-   width: 285px;
-   height: auto;
-   background-color: blue;
-   color: white;
-   border-radius: 5px;
-   padding: 10px;
-   text-align: center;
-   font-size: 35px;
-   margin-top: 20px;
-   display: flex;
-   justify-content: center inset;
-   justify-content: space-between;
-   align-items: center;
-   transition: all ease-in-out 0.3s;
+.more_vid_button {
+  width: 285px;
+  height: auto;
+  background-color: blue;
+  color: white;
+  border: 2px solid blue;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  font-size: 35px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center inset;
+  justify-content: space-between;
+  align-items: center;
+  transition: all ease-in-out 0.3s;
 }
 
-.more_vid_button:hover,.more_vid_button:active{
+.more_vid_button:hover,
+.more_vid_button:active {
   width: 320px;
   box-shadow: 0 0 20px rgb(145, 145, 145);
   background-color: white;
   color: blue;
-  
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.Youtubeshorts{
+.Youtubeshorts {
   width: 100%;
   height: auto;
   background-color: yellow;
   padding: 3vw;
   margin-bottom: auto;
   border: 1px solid rgb(138, 138, 138);
-  border-radius: 15% 15% 15% 15% ;
+  border-radius: 15% 15% 15% 15%;
   display: flex;
   flex-direction: column;
   justify-content: space-between inset;
@@ -343,50 +294,207 @@ p {
   align-items: center;
 }
 
-
-.Youtubeshorts:hover{
+.Youtubeshorts:hover {
   box-shadow: 0 0 20px rgb(83, 83, 83);
   transition: all ease 0.3s;
 }
 
-
-
-.responsive-design-shorts:hover{
+.responsive-design-shorts:hover {
   box-shadow: 0 0 20px rgb(83, 83, 83);
   transition: all ease 0.3s;
 }
 
+.footer-area {
+  width: 100%;
+  height: auto;
+  background-color: yellow;
+  padding: 1vw;
+  border: 1px solid rgb(138, 138, 138);
+  border-radius: 15% 15% 0% 0%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly inset;
+  justify-content: center;
+  align-items: center;
+  transition: all ease-in-out 0.3s;
+}
 
+.footer-area:hover {
+  box-shadow: 0px 0px 25px rgb(114, 114, 114);
+}
 
+.for-margin {
+  margin: 1vw;
+}
 
+#flex_list1 {
+  width: 550px;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  cursor: pointer;
+}
 
+.fontaws-icons {
+  width: 47px;
+  height: 47px;
+  border-radius: 50%;
+  font-size: 30px;
+  border: 3px solid blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: blue;
+  opacity: 0.9;
+  transition: all ease 0.3s;
+}
 
+.fontaws-icons:hover {
+  opacity: 1;
+  animation: shake 0.5s ease 1;
+}
 
+@keyframes shake {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  75% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 
+#flex_list2 {
+  display: flex;
+  width: 800px;
+  justify-content: space-between;
+  cursor: pointer;
+}
 
+.text-details {
+  font-size: 27px;
+  color: blue;
+  font-weight: 500;
+  transition: all ease 0.3s;
+}
 
+.text-details:hover {
+  animation: shake 0.5s ease 1;
+}
 
+/* login and sign-in form css  */
 
+.container {
+  width: 100%;
+  height: 925px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
 
+form {
+  width: 400px;
+  height: auto;
+  background-color: yellow;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 30px;
+  border-radius: 7px;
+  border: 1px solid black;
+}
 
+.form-text {
+  font-size: 25px;
+  color: blue;
+}
 
+.form-ctrl {
+  width: 300px;
+  height: 40px;
+  padding: 10px;
+  position: relative;
+  top: -10px;
+}
 
+.rememberme-text {
+  color: blue;
+  font-size: 20px;
+}
 
+#tick-color {
+  background-color: blue;
+}
 
+/* Hide the default checkbox */
+input[type="checkbox"] {
+  display: none;
+}
 
+/* Style the label as a custom checkbox */
+.custom-checkbox {
+  display: inline-block;
+  cursor: pointer;
+  padding-left: 25px;
+  position: relative;
+}
 
+/* Style the checkbox tick */
+.custom-checkbox::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid blue; /* Blue border color */
+  border-radius: 3px;
+  position: absolute;
+  left: 0;
+  top: 2px;
+  background-color: transparent;
+}
 
+/* Change the tick color when checked */
+input[type="checkbox"]:checked + .custom-checkbox::before {
+  background-color: blue; /* Blue tick color */
+}
 
+/* Style the checkmark inside the checkbox when checked */
+input[type="checkbox"]:checked + .custom-checkbox::after {
+  content: "\2713"; /* Unicode checkmark symbol */
+  display: block;
+  position: absolute;
+  left: 4px;
+  top: -1px;
+  color: white; /* White checkmark color */
+}
 
+button {
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  background-color: blue;
+  padding: 5px;
+  border-radius: 5px;
+}
 
-
-
-
-
-
+button:hover {
+  background-color: white;
+  color: blue;
+}
 
 /* for mobile versions  */
-@media only screen and (min-width: 0px) and (max-width: 1024px) {
+@media only screen and (min-width: 0px) and (max-width: 1000px) {
   .image1 {
     /* New image styles for the specific range */
     /* For example, change the image source */
@@ -394,8 +502,6 @@ p {
     width: 100%;
     height: auto;
   }
-
-
 
   .profiles {
     flex-direction: column;
@@ -405,9 +511,7 @@ p {
     width: 80%;
   }
 
-
-
-  .YoutubeVideos{
+  .YoutubeVideos {
     border-radius: 20px;
   }
   .row {
@@ -415,28 +519,37 @@ p {
     justify-content: center;
     align-items: center;
     margin: 0;
-  
   }
 
-  .responsive-design{
-      width: 85vw;
-      height: 50vw;
-      margin-top: 20px;
+  .responsive-design {
+    width: 85vw;
+    height: 50vw;
+    margin-top: 20px;
   }
 
-
-  
-  .Youtubeshorts{
+  .Youtubeshorts {
     border-radius: 20px;
   }
 
-
-
-  .responsive-design-shorts{
+  .responsive-design-shorts {
     width: 85vw;
     height: 150vw;
     margin-top: 20px;
-}
-}
+  }
 
+  #flex_list1,
+  #flex_list2,
+  #flex_list3 {
+    width: 350px;
+  }
 
+  .container {
+    display: inline-block;
+  }
+
+  form {
+    width: 100%;
+    margin-top: 40%;
+    border: 1px solid black;
+  }
+}

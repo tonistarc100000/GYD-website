@@ -33,6 +33,18 @@ window.addEventListener("scroll", function () {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 // this code for the profiles section which lies in main tag main 
 
 
@@ -143,9 +155,34 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-// apear and disappear code foe reach me button 
 
-document.addEventListener('DOMContentLoaded', function(){
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// appear and disappear code foe reach me button 
+
+document.addEventListener('DOMContentLoaded', function () {
     const button = document.querySelector('.button1');
     const h1 = document.querySelector('.h1');
 
@@ -158,7 +195,7 @@ document.addEventListener('DOMContentLoaded', function(){
     button.addEventListener('click', showh1);
 
     // Event listener to hide h1 when clicked outside
-    document.addEventListener('click', function(event) {
+    document.addEventListener('click', function (event) {
         if (!h1.contains(event.target) && !button.contains(event.target)) {
             h1.style.display = 'none';
         }
@@ -169,7 +206,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
 
 
-document.addEventListener('DOMContentLoaded', function(){
+document.addEventListener('DOMContentLoaded', function () {
     const button2 = document.querySelector('.button2');
     const h2 = document.querySelector('.h2');
 
@@ -182,7 +219,7 @@ document.addEventListener('DOMContentLoaded', function(){
     button2.addEventListener('click', showh2);
 
     // Event listener to hide h2 when clicked outside
-    document.addEventListener('click', function(event) {
+    document.addEventListener('click', function (event) {
         if (!h2.contains(event.target) && !button2.contains(event.target)) {
             h2.style.display = 'none';
         }
@@ -193,7 +230,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
 
 
-document.addEventListener('DOMContentLoaded', function(){
+document.addEventListener('DOMContentLoaded', function () {
     const button3 = document.querySelector('.button3');
     const h3 = document.querySelector('.h3');
 
@@ -206,7 +243,7 @@ document.addEventListener('DOMContentLoaded', function(){
     button3.addEventListener('click', showh2);
 
     // Event listener to hide h3 when clicked outside
-    document.addEventListener('click', function(event) {
+    document.addEventListener('click', function (event) {
         if (!h3.contains(event.target) && !button3.contains(event.target)) {
             h3.style.display = 'none';
         }
@@ -219,7 +256,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
 
 
-document.addEventListener('DOMContentLoaded', function(){
+document.addEventListener('DOMContentLoaded', function () {
     const button4 = document.querySelector('.button4');
     const h4 = document.querySelector('.h4');
 
@@ -232,9 +269,14 @@ document.addEventListener('DOMContentLoaded', function(){
     button4.addEventListener('click', showh2);
 
     // Event listener to hide h4 when clicked outside
-    document.addEventListener('click', function(event) {
+    document.addEventListener('click', function (event) {
         if (!h4.contains(event.target) && !button4.contains(event.target)) {
             h4.style.display = 'none';
         }
     });
 });
+
+
+
+
+
