@@ -8,6 +8,7 @@
 
 body {
   background-color: rgb(255, 253, 162);
+  overflow-x: hidden;
 }
 
 a{
@@ -20,11 +21,24 @@ header,main{
 
 /* the header start from here  */
 
+
+
+.nav-container{
+  width: auto;
+  height: auto;
+  background-color: aqua;
+  display: flex;
+  align-items: center;
+}
+
+
+
+
 .title-name {
   width: 100%;
   height: 65px;
   font-size: 40px;
-  background-color: yellow;
+  background-color:yellow;
   text-align: center;
   color: blue;
   border: 1px solid black;
@@ -97,6 +111,90 @@ header,main{
     width: 50vw !important; 
 }
 
+
+
+
+ /* the hidden section , showed up on clicking of three line event */
+
+
+ .three-lines{
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  margin: 3px 0px 0px 2vw;
+  background-color:yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  transition: all ease-in-out 0.2s;
+  z-index: 10001;
+}
+
+
+.three-lines:hover{
+  font-size: 30px;
+  transform: rotate(90deg);
+  border: 1px solid blue;
+}
+
+
+.three-line-open-container{
+  width: 40%;
+  height: 100%;
+  background-color:yellow;
+  position: absolute;
+  border: 2px solid black;
+  top: 65px;
+  left: 0%;
+  z-index: 1100;
+  transition: all ease-in-out 0.2S;
+  display: flex inset;
+  flex-direction: column;
+  align-items: center;
+}
+
+.three-line-elements{
+  width: 100%;
+  height: 50px;
+  font-size: 30px;
+  background-color:rgb(255, 255, 0);
+  color: blue;
+  padding:  0px 0px 0px 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.three-line-elements:hover{
+  background-color: white;
+  font: 35px;
+  font-weight: bolder;
+}
+
+.cross{
+  width: 100%;
+  height: 50px;
+  font-size: 30px;
+  background-color:yellow;
+  display: flex;
+  margin-top: 7vw;
+  justify-content: center;
+  align-items: center;
+}
+.cross:hover{
+  background-color: yellow;
+  font-size: 40px;
+  transition: all ease 0.1s;
+}
+
+
+
+
+
 @media only screen and (min-width: 0px) and (max-width: 1000px) {
   .all-nav {
     flex-direction: column;
@@ -107,6 +205,10 @@ header,main{
   }
   #searchbar {
     width: 100vw;
+  }
+
+  .three-line-open-container{
+    width: 80%;
   }
 }
 
@@ -185,6 +287,25 @@ header,main{
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* for the download hover and click effect  */
 .download{
   position: relative;
   bottom: 0;
@@ -201,8 +322,78 @@ header,main{
 
 .download:hover{
   opacity: 1;
- padding: 0px 15px ;
+  padding: 0px 15px ;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* this for the pagination container  */
+
+
+.pagination-container{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3vw;
+}
+
+.numbering{
+  width: 40px;
+  height: 35px;
+  font-size: 22px;
+  background-color: blue;
+  color: white;
+  border-radius: 5px;
+  margin: 30px 20px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all ease-in-out 0.2s;
+}
+
+.numbering:hover{
+  transform: scale(1.2);
+}
+
+
+#n1{
+  background-color: white;
+  color: blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -260,6 +451,159 @@ header,main{
 
 
 
+/* For the premium page  */
+.intro-box{
+  margin-top: 65px;
+  width: 100%;
+  height: 200px;
+  background-color: yellow;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  border-bottom: 1px solid black;
+  border-radius: 0% 0% 15% 15% ;
+}
 
 
+.intro-box:hover{
+  box-shadow: 0px 0px 25px rgb(114, 114, 114);
+}
+
+
+
+
+.into-to-plans{
+  color: blue;
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.into-to-plans2{
+  width: 50vw;
+  color: blue;
+  font-size: 22px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+
+
+
+
+.outer-container{
+  width: 100%;
+  height: auto;
+  margin: 40px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.plan-container{
+  width: 80%;
+  height: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 15px;
+}
+
+.plan{
+  display: inline-block;
+  width: 23vw;
+  height: auto;
+  margin: 0px auto;
+  background-color: yellow;
+  border: 2px solid rgb(81, 81, 81);
+  border-radius: 5px;
+  padding: 3vw 1.5vw 1vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  transition: all ease-in-out 0.3s;
+}
+
+.plan:hover{
+  width: 24vw;
+  box-shadow: 0px 0px 7px rgb(62, 62, 62);
+}
+
+button {
+  height: 60px;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  background-color: blue;
+  padding: 5px;
+  border-radius: 5px;
+  transition: 0.3s;
+  margin-top: 12vw;
+}
+
+button:hover {
+  background-color: white;
+  color: blue;
+}
+
+
+
+.offer-text{
+  font-size: 21px;
+  line-height: 55px;
+}
+
+.bolder{
+  font-weight: bolder;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 0px) and (max-width: 1030px) {
+  .plan-container{
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+  }
+  
+  .outer-container{
+    margin-top: 70px;
+    width: 100%;
+    height: auto;
+  }
+
+  .plan{
+    width: 98%;
+    margin-bottom: 50px;
+    padding: 10px;
+  }
+  .plan:hover{
+    width: 98%;
+    margin-top: 50px;
+  }
+
+  .offer-text{
+    font-size: 4.5vw;
+  }
+
+  .into-to-plans{
+    font-size: 35px;
+  }
+
+  .into-to-plans2{
+    width: 90%;
+    font-size: 18px;
+  }
+
+  .numbering{
+    margin: 30px 10px 10px;
+  }
+}
 

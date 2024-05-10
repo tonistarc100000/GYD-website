@@ -127,15 +127,16 @@ p {
   background-color: yellow;
   padding: 1vw;
   border: 1px solid rgb(138, 138, 138);
-  border-radius: 15% 15% 0% 0%;
+  border-radius: 15%;
   display: flex;
   justify-content: space-evenly inset;
   justify-content: center;
   align-items: center;
+  transition: all ease-in-out .2s;
 }
 
 .profiles:hover {
-  box-shadow: 0px -17px 25px rgb(220, 220, 220);
+  box-shadow: 0 0 20px rgb(83, 83, 83);
 }
 
 .card {
@@ -304,6 +305,31 @@ p {
   transition: all ease 0.3s;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /*  footer start from here ,footer css is same for all the pages  */
+
 .footer-area {
   width: 100%;
   height: auto;
@@ -392,6 +418,25 @@ p {
   animation: shake 0.5s ease 1;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* login and sign-in form css  */
 
 .container {
@@ -438,12 +483,11 @@ form {
   background-color: blue;
 }
 
-/* Hide the default checkbox */
 input[type="checkbox"] {
   display: none;
 }
 
-/* Style the label as a custom checkbox */
+
 .custom-checkbox {
   display: inline-block;
   cursor: pointer;
@@ -451,13 +495,13 @@ input[type="checkbox"] {
   position: relative;
 }
 
-/* Style the checkbox tick */
+
 .custom-checkbox::before {
   content: "";
   display: inline-block;
   width: 16px;
   height: 16px;
-  border: 2px solid blue; /* Blue border color */
+  border: 2px solid blue; 
   border-radius: 3px;
   position: absolute;
   left: 0;
@@ -465,19 +509,19 @@ input[type="checkbox"] {
   background-color: transparent;
 }
 
-/* Change the tick color when checked */
+
 input[type="checkbox"]:checked + .custom-checkbox::before {
-  background-color: blue; /* Blue tick color */
+  background-color: blue;
 }
 
-/* Style the checkmark inside the checkbox when checked */
+
 input[type="checkbox"]:checked + .custom-checkbox::after {
-  content: "\2713"; /* Unicode checkmark symbol */
+  content: "\2713";
   display: block;
   position: absolute;
   left: 4px;
   top: -1px;
-  color: white; /* White checkmark color */
+  color: white; 
 }
 
 button {
@@ -493,11 +537,29 @@ button:hover {
   color: blue;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* for mobile versions  */
 @media only screen and (min-width: 0px) and (max-width: 1000px) {
   .image1 {
-    /* New image styles for the specific range */
-    /* For example, change the image source */
     content: url("Images/HeaderImage-m.png");
     width: 100%;
     height: auto;
@@ -505,7 +567,7 @@ button:hover {
 
   .profiles {
     flex-direction: column;
-    border-radius: 20px 20px 0% 0%;
+    border-radius: 20px 20px 20px 20px;
   }
   .card {
     width: 80%;
@@ -552,4 +614,16 @@ button:hover {
     margin-top: 40%;
     border: 1px solid black;
   }
+
+
+.text-details{
+  font-size: 16px;
 }
+
+
+
+}
+
+
+
+
